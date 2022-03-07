@@ -8,6 +8,18 @@
 .is-first{
    border: 2px solid #000;
  }
+.martial-class{
+   background-color: darkred;
+ }
+.half-caster-class{
+   background-color: purple;
+ }
+.caster-class{
+  background-color: aquamarine;
+}
+.no-type{
+   background-color: peru;
+ }
 img{
   margin: 10px;
   max-width: 350px;
