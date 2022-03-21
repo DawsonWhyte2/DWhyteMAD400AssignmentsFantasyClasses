@@ -72,19 +72,7 @@ export class ContentListComponent implements OnInit {
   ngOnInit(): void {
   }
   checkForTitle(title: string): void{
-    if (this.classList.some(c => c.title === title))
-    {
-      this.titleFound = true;
-    }
-    else {
-      this.titleFound = false;
-    }
-    if (this.classList.filter(c => c.title === title).length)
-    {
-      this.titleFound = true;
-    }
-    else {
-      this.titleFound = false;
-    }
+
+    this.titleFound = this.classList.some(c => c.title === title);
   }
 }

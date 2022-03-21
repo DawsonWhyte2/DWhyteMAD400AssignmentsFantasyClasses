@@ -4,7 +4,7 @@
   <button (click)="checkForTitle(titleSearch.value)">Title Check</button>
   <div>
     <span class="success" *ngIf="titleFound"> {{ titleSearch.value}} found!</span>
-    <span class="failure" *ngIf="titleFound === false"> {{ titleSearch.value}} not found!</span>
+    <span class="failure" *ngIf="!titleFound && titleSearch.value"> {{ titleSearch.value}} not found!</span>
   </div>
 </div>
 <!--</form>-->

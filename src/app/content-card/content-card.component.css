@@ -1,20 +1,23 @@
-:host {
+:host { /* app-content-card */
   border: 1px solid #337d33;
   display: block;
   width: 400px;
   margin: 10px auto;
   text-align: center;
 }
+:host.found {
+  border: 10px solid black;
+}
 .is-first{
    border: 2px solid #000;
  }
-.martial-class{
+:host.notags{
    background-color: darkred;
  }
-.half-caster-class{
+:host.onetag{
    background-color: purple;
  }
-.caster-class{
+:host.twotags{
   background-color: aquamarine;
 }
 .no-type{
@@ -30,11 +33,11 @@ img{
 .creator,.type,.tags{
   margin: 8px 16px 8px 0;
 }
-.author-info{
+div.author-info{
   height: 24px;
 }
-.creator{
-
+.author-info .creator{
+  font-weight: bold;
 }
 .type{
 
