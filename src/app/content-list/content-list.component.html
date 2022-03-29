@@ -9,15 +9,20 @@
 </div>
 <!--</form>-->
 
-<!-- No type set -->
-<app-content-card [class.found]="titleSearch.value === item.title" *ngFor="let item of (classList | classTypeFilter); first as isTheFirstElement"
+
+
+<!-- NoTags set -->
+<app-content-card appHoverAffect affect="border" [firstOrLast]="isTheFirstElement || isTheLastElement"
+                  [class.found]="titleSearch.value === item.title" *ngFor="let item of (classList | classTypeFilter); first as isTheFirstElement; last as isTheLastElement"
                   [content]="item" [class.is-first]="isTheFirstElement" class="notags"></app-content-card>
 
-<!-- Martial type set -->
-<app-content-card [class.found]="titleSearch.value === item.title" *ngFor="let item of (classList | classTypeFilter: 1); first as isTheFirstElement"
+<!-- OneTag type set -->
+<app-content-card appHoverAffect affect="border" [firstOrLast]="isTheFirstElement || isTheLastElement"
+                  [class.found]="titleSearch.value === item.title" *ngFor="let item of (classList | classTypeFilter: 1); first as isTheFirstElement; last as isTheLastElement"
                   [content]="item" [class.is-first]="isTheFirstElement" class="onetag"></app-content-card>
 
-<!--Half-Caster type set -->
-<app-content-card [class.found]="titleSearch.value === item.title" *ngFor="let item of (classList | classTypeFilter: 2); first as isTheFirstElement"
+<!-- TwoTags type set -->
+<app-content-card appHoverAffect affect="border" [firstOrLast]="isTheFirstElement || isTheLastElement"
+                  [class.found]="titleSearch.value === item.title" *ngFor="let item of (classList | classTypeFilter: 2); first as isTheFirstElement; last as isTheLastElement"
                   [content]="item" [class.is-first]="isTheFirstElement" class="twotags"></app-content-card>
 

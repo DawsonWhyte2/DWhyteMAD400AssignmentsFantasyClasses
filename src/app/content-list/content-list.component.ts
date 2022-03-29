@@ -66,6 +66,11 @@ export class ContentListComponent implements OnInit {
       imgURL: "https://2e.aonprd.com/Images/Classes/Iconic_Seelah.png",
       type: "Martial Class",
       tags: ["Tough"]
+    },{
+      id: 7,
+      title: 'Amberite',
+      creator: "Amber",
+      description: "A really strong demigod"
     }];
   }
 
