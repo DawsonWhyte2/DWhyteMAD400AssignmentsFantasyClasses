@@ -77,7 +77,18 @@ export class ContentListComponent implements OnInit {
   ngOnInit(): void {
   }
   checkForTitle(title: string): void{
+    if (this.classList.some(c => c.title === title)) {
+      this.titleFound = true;
+    } else {
+      this.titleFound = false;
+    }
+    // this.titleFound = this.classList.some(c => c.title === title);
+  }
 
-    this.titleFound = this.classList.some(c => c.title === title);
+  addContentToList(newContent: Content): void {
+    console.log("content that came from the child element: ", newContent);
+    this.classList.push(newContent);
+    this.classList = [...this.classList];
+    console.log("my list after cloning: ", this.classList);
   }
 }
