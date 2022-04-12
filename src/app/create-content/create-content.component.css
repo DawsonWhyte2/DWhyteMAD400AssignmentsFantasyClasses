@@ -1,0 +1,13 @@
+div{
+  margin: 5px auto;
+  width: 300px;
+}
+label{
+  text-align: justify;
+}
+input{
+
+}
+.error-message{
+  color: red;
+}
