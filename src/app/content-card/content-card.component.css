@@ -21,6 +21,9 @@
   border: 10px solid black;
   background-color: yellow;
 }
+:host.classItem {
+  box-shadow: 5px 10px #55555588;
+}
 img{
   margin: 10px;
   max-width: 350px;
